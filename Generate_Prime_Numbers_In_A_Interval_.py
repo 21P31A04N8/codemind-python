@@ -10,6 +10,7 @@ def primecount(n):
         return False
 m=int(input())
 n=int(input())
+c=0
 for i in range(m,n+1):
     if(primecount(i)):
         print(primecount(i))
