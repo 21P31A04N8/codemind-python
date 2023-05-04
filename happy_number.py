@@ -15,3 +15,5 @@ def happy(n):
 n=int(input())
 print(happy(n))
             
+        
+        
