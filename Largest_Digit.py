@@ -1,9 +1,11 @@
+def mindig(n):
+    maxi=0
+    while(n):
+        r=n%10
+        if(maxi<r):
+            maxi=r
+        n=n//10
+    return maxi
 n=int(input())
-large=0
-rem=0
-while n>0:
-    rem=n%10
-    if rem>large:
-        large=rem
-    n=n//10
-print("%d"%large)
+print(mindig(n))
+        
