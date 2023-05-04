@@ -1,14 +1,23 @@
-import math
-n = int(input())
-count_digits = len(str(n))
-sum = 0 
-x = n
-while (x!=0) :
-    r = x % 10
-    sum = (int) (sum + math.pow(r, count_digits))
-    count_digits = count_digits - 1
-    x = x//10
-if (sum==n) :
-    print ("True")
-else :
-    print ("False")
+def disarium(n):
+    c=0
+    temp=n
+    temp1=n
+    while(n):
+        r=n/10
+        c+=1
+        n=n//10
+    sm=0
+    while(temp and c>0):
+        r=temp%10
+        sm+=(r**c)
+        temp=temp//10
+        c-=1
+    if(temp1==sm):
+        return True
+    else:
+        return False
+n=int(input())
+print(disarium(n))
+    
+        
+    
