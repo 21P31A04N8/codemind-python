@@ -7,6 +7,6 @@ while(c<n):
     a=b
     b=c
 if(c==n):
-    print("True")
+    print(True)
 else:
-    print("False")
+    print(False)
