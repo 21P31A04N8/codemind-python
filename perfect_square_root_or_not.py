@@ -1,9 +1,12 @@
+import math
 n=int(input())
-for i in range(1,n,1):
-    if i*i==n:
-        print("True")
-        break
-    elif i*i>n:
-        print("False")
-        break
-    
+cnt=0
+for i in range(1,(n//2)):
+    if math.sqrt(n)==i:
+        cnt=1
+    else:
+        cnt=cnt
+if cnt==0:
+    print(False)
+else:
+    print(True)
