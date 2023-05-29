@@ -2,9 +2,11 @@ n=input().lower()
 k=list(n)
 l=[]
 for i in k:
-    if k.count(i)==1 and i!=" ":
+    if i!=" ":
         l.append(i)
-l.sort()
+k=list(set(l))
+k.sort()
 #print(*l)
-for i in range(len(l)):
-    print(l[i],end="")
+#for i in range(len(l)):
+for i in range(len(k)):
+    print(k[i],end="")
