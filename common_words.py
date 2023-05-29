@@ -1,5 +1,5 @@
-s1=input().lower().split()
-s2=input().lower().split()
-for i in s2:
-    if i in s1:
+n=input().lower().split()
+m=input().lower().split()
+for i in m:
+    if i in n:
         print(i,end=' ')
