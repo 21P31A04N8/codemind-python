@@ -1,22 +1,18 @@
-import math
-def isprime(num):
-    if num==1:
-        return False
-    sq=int(math.sqrt(num))
-    for i in range(2,sq+1):
-        if num%i==0:
-            return False
-    return True
-num=int(input())
-if isprime(num):
-    while num:
-        d=num%10
-        num=num//10
-        if d==1 or d==4 or d==6 or d==9:
-            print("Not Mega Prime")
-            break
-    else:
-        print("Mega Prime")
+n=int(input())
+for i in range (2,(n//2)+1):
+    if n%i==0:
+        print("Not Mega Prime")
+        break
 else:
-    print("Not Mega Prime")
-        
+    d=0
+    pd=0
+    while n:
+        r=n%10
+        n=n//10
+        d+=1
+        if(r==2 or r==3 or r==5 or r==7):
+            pd+=1
+    if(pd==d):
+        print("Mega Prime")
+    else:
+        print("Not Mega Prime")
