@@ -1,24 +1,24 @@
-def p(n):
-    for i in range(2,int(n/2)+1):
-        if(n%i==0):
+for i in range(int(input())):
+    def prime(n):
+        if(n==1):
             return 0
-    else:
-        return 1
-t=int(input())
-while t:
-    n=int(input())
-    l=[]
-    for i in range(n,1,-1):
-        if(p(i)):
-            j=i
+        for i in range(2,(n//2)+1):
+            if (n%i==0):
+                return 0
+        else:
+            return 1
+    a=int(input())
+    for i in range(a+1,99999999):
+        if prime(i):
+            x=i
             break
-    for i in range(n,n+100):
-        if(p(i)):
-            k=i
+    for j in range(a,2,-1):
+        if prime(j):
+            y=j
             break
-    if (k-n)<(n-j):
-        print(k)
+    if (x-a)<(a-y):
+        print(x)
     else:
-        print(j)
-    t-=1
-    #print(l)
+        print(y)
+            
+            
