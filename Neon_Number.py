@@ -1,15 +1,12 @@
 n=int(input())
-c=0
-sum=0
-pro=n*n
-while pro!=0:
-    rem=pro%10
-    sum+=rem
-    pro=pro//10
-    c+=1
-if sum==n:
+t=n*n
+s=0
+while t!=0:
+    r=t%10
+    s=s+r
+    t=t//10
+if s==n:
     print("Neon Number")
 else:
     print("Not Neon Number")
-    
     
