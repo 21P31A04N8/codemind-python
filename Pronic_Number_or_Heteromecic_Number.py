@@ -1,11 +1,8 @@
+#import math
 n=int(input())
-cnt=0
-for i in range(1,(n//2)):
-    a=i*(i+1)
-    if n==a:
-        cnt+=1
+for i in range(0,int((n)**0.5)+1):
+    if (i*(i+1))==n:
+        print("YES")
         break
-if cnt==1:
-    print("YES")
 else:
     print("NO")
