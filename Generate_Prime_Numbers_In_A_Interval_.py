@@ -1,19 +1,13 @@
-def primecount(n):
-    pc=0
-    for j in range(1,n+1):
-        if(n%j==0):
-            pc+=1
-    if(pc==2):
-        return n
-        return True
-    else:
+def prime(n):
+    if n<=1:
         return False
-m=int(input())
+    for i in range(2,(n//2)+1):
+        if n%i==0:
+            return False
+    return True
 n=int(input())
-c=0
-for i in range(m,n+1):
-    if(primecount(i)):
-        print(primecount(i))
-        
-        
-            
+m=int(input())
+#print(n,m)
+for i in range(n,m+1):
+    if prime(i):
+        print(i)
