@@ -1,16 +1,14 @@
-a=int(input())
-b=int(input())
-sum1=0
-sum2=0
-for i in range(1,(a//2)+1):
-    if a%i==0:
-        sum1+=i
-temp=sum1
-for k in range(1,(b//2)+1):
-    if (b%k==0):
-        sum2+=k
-temp1=sum2
-if (temp==b and temp1==a):
+n=int(input())
+m=int(input())
+sn=0
+sm=0
+for i in range(1,(n//2)+1):
+    if n%i==0:
+        sn+=i
+for i in range(1,(m//2)+1):
+    if m%i==0:
+        sm+=i
+if sn==m and sm==n:
     print("Amicable")
 else:
     print("Not Amicable")
